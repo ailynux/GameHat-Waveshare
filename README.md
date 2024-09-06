@@ -27,7 +27,7 @@
 </div>
 
 ## About This Project    <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/a2605358-6b87-44ab-87fb-20dcdc5f9ef2" width="55">&nbsp;
-Hey everyone! Welcome to my guide on turning a Raspberry Pi into a super cool retro gaming console using the WaveShare Gameboy HAT. I had a blast making this, and it was so easy that I ended up helping three of my friends make their own too!    <img src="https://cultofthepartyparrot.com/parrots/hd/60fpsparrot.gif" width="25" height="25"/>
+Hey everyone! Welcome to a guide on turning a Raspberry Pi into a super cool retro gaming console using the WaveShare Gameboy HAT. I had a blast making this, and it was so easy that I ended up helping three of my friends make their own too!    <img src="https://cultofthepartyparrot.com/parrots/hd/60fpsparrot.gif" width="25" height="25"/>
 
 So, this whole thing started as a fun experiment with Raspberry Pi's, and it turned out to be a total win. I figured out a bunch of neat tricks along the way and I’ve put them all in this guide. If you’re looking to have some fun and get into gaming with the Pi, you’re in the right place.
 
@@ -67,7 +67,25 @@ The best part? It was super straightforward. I’ll walk you through what I did,
   </a>
 </p>
 
-## Features
+## Parts needed
+1. Game HAT for Raspberry Pi - https://www.waveshare.com/game-hat.htm
+2. 2nd Computer to program the Pi's OS beforehand 
+3. 18650 lithium battery
+4. SD Card for Raspi (minimum 64gb so you aren't limited on ROM storage!)
+5. Raspberry pi - Model's allowed A+/B+/2B/3B/3B+/4B
+   - Optional
+     * STL printed case
+       
+# Assembling the WaveShare Game HAT and Raspberry Pi
+
+## Overview
+This is a quick guide to assembling the WaveShare Game HAT with your Raspberry Pi.
+
+**Snap the Game HAT onto the Raspberry Pi**:
+   - Gently press the Game HAT down so that the GPIO pins slide into the Game HAT's connector.
+   
+
+## Features as included on the Waveshare Wiki
 
 - **3.5inch IPS Screen**: 480 × 320 resolution ensures clear and vibrant visuals.
 - **60 FPS Gameplay**: Experience smooth and responsive gameplay with no frame loss.
@@ -83,7 +101,7 @@ The best part? It was super straightforward. I’ll walk you through what I did,
    - Obtain the latest Recalbox image for your Raspberry Pi model from [Recalbox Official Download](https://download.recalbox.com/en/#step3allimages).
 
 2. **Write the Image to an SD Card**:
-   - Use Win32DiskImager or a similar tool to write the Recalbox image to your SD card.
+   - Use Balena Etcher or the Raspberry Pi imaging app or a similar tool to write the Recalbox image to your SD card.
 
 3. **Modify the `config.txt` File**:
    - Add the following configurations to enhance compatibility with the Game HAT:
@@ -128,6 +146,54 @@ The best part? It was super straightforward. I’ll walk you through what I did,
 
 3. **Save and Reboot**:
    - Save your changes in nano and reboot your Raspberry Pi to apply the new settings.
+     
+4. **How to add ROMS using SSH**:
+   - SSH Setup on Windows and Mac
+   - Accessing your Raspberry Pi via SSH allows you to control and configure your system remotely. Here's how to set it up on both Windows and macOS.
+   - Windows SSH Setup
+     
+## Windows SSH Setup
+
+1. **Install PuTTY**:
+   - Download and install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
+
+2. **Obtain Raspberry Pi IP Address**:
+   - Connect your Raspberry Pi to a monitor and keyboard, then use `ifconfig` to find the IP.
+
+3. **Connect Using PuTTY**:
+   - Open PuTTY, enter your Raspberry Pi's IP address, and select "SSH" as the connection type.
+   - Default username: `root`, password: `recalboxroot`.
+
+4. **Access the Recalbox Configuration**:
+   - Run the following commands to enable write access and edit the configuration:
+```bash
+mount -o remount,rw /
+nano /recalbox/share/system/recalbox.conf
+```
+5. **Tip**:
+   - If you go to the file explorer and click in the serach you can //192.168.100 (example) and it will take you directly to the RecalBox config files and you can easily access the ROMS folder there.
+   - Drag and drop your ROMS and you should be set!
+     
+## macOS SSH Setup
+
+1. **Use Terminal**:
+
+   Open Terminal and connect to your Raspberry Pi using the following command:
+
+```bash
+ssh root@<Your_Raspberry_Pi_IP>
+Example:
+```
+
+```bash
+ssh root@192.168.1.100
+Default password: recalboxroot.
+```
+
+
+```bash
+reboot
+```
 
 ## Support and Contact
 
