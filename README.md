@@ -197,7 +197,7 @@ reboot
 
 - **Username**: [@ailynux](https://github.com/ailynux)
 - **Email**: [adiaz@ai-lyn.com](mailto:adiaz@ai-lyn.com)
-- **Project Link**: [GitHub - pieceofpy](https://github.com/ailynux/GameHat-Waveshare)
+- **Project Link**: [GitHub - GameHat](https://github.com/ailynux/GameHat-Waveshare)
 
 ## Acknowledgements  <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/7cc5988c-f607-4d4f-ab01-360a4f9321eb" width="75">&nbsp;    
 - Raspberry Pi Foundation
