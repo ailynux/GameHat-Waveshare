@@ -1,4 +1,4 @@
-# WaveShare Gameboy HAT Project using a Raspberry Pi 🎮 
+# WaveShare Gameboy HAT Project x Raspberry Pi 🎮 
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/74038190/212751381-b0b2320e-6ef6-4041-a77a-de279fe5d3ae.gif" width="500">
@@ -38,12 +38,14 @@ So, this whole thing started as a fun experiment with Raspberry Pi's, and it tur
 
 Here’s what it looked like when I was putting it together:
 
-![Work in Progress](https://github.com/ailynux/pieceofpy/assets/work_in_progress.jpg)
+![work in progress](https://github.com/user-attachments/assets/707e92cb-ee9c-4bd1-9a18-bd8776cc526a)
+
 *Putting it all together was a breeze and a lot of fun!*
 
 And here’s the finished setup, ready for some serious gaming!
 
-![Fully Assembled](https://github.com/ailynux/pieceofpy/assets/fully_assembled.jpg)
+![full assembled](https://github.com/user-attachments/assets/787a10fa-42c8-4c94-8eea-6ef5cbb896da)
+
 *Ready to play and enjoy!*
 
 The best part? It was super straightforward. I’ll walk you through what I did, step by step, from snapping the parts together to firing it up with Recalbox. It’s really that easy, and trust me, it’s a lot of fun.
@@ -194,9 +196,7 @@ reboot
 ```
 
 ## Support and Contact
-
 - **Username**: [@ailynux](https://github.com/ailynux)
-- **Email**: [adiaz@ai-lyn.com](mailto:adiaz@ai-lyn.com)
 - **Project Link**: [GitHub - GameHat](https://github.com/ailynux/GameHat-Waveshare)
 
 ## Acknowledgements  <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/7cc5988c-f607-4d4f-ab01-360a4f9321eb" width="75">&nbsp;    
